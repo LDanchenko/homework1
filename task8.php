@@ -1,25 +1,29 @@
 <?php
 $str = 'яблоко груша виноград апельсин';
-echo ' ' . $str;
+echo $str;
 $array = explode(" ", $str);
 echo '<br/>';
 foreach ($array as $key => $value) {
-    echo  '<br/>';
+    echo '<br/>';
     echo "\$array[$key] => $value\n";
 }
-echo  '<br/>';
-echo  '<br/>';
+echo '<br/>';
+echo '<br/>';
 echo 'Перевернули массив';
 $stroka = '';
 $reversed = array_reverse($array);
 foreach ($reversed as $key => $value) {
-    echo  '<br/>';
+    echo '<br/>';
     echo "\$reserved[$key] => $value\n";
-    $stroka = $stroka .$value.', ';
+    if ($stroka != '') {
+        $stroka = $stroka . ', ' . $value;
+    } else {
+        $stroka = $stroka . $value;
+    }
 }
-echo  '<br/>';
-echo  '<br/>';
-echo 'Склеили';
-echo  '<br/>';
-echo ' '. $stroka;
+echo '<br/>';
+echo '<br/>';
+echo 'Склеили:';
+echo '<br/>';
+echo $stroka;
 ?>
