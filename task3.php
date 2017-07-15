@@ -1,13 +1,16 @@
 <?php
-define("num", 3500, true);
-if (defined("num") == true)
+define("NUM", 3500, true);
+if (defined("NUM") == true) {
     echo "Константа num объявлена!";
-    echo "<br/>";
-    echo 'Константа равна ' .num .'.';
+}
+echo "<br/>";
+echo 'Константа равна ' . NUM . '.';
 echo "<br/>";
 echo 'Пробуем переопределить ее...';
 echo "<br/>";
-define("num", 300, true);
+define("NUM", 300, true);
 echo "<br/>";
-    if (num==3500) echo 'Не вышло:(';
+if (NUM == 3500) {
+    echo 'Не вышло:(';
+}
 ?>
