@@ -1,6 +1,6 @@
 <?php
 $day = rand(1, 20);
-echo  ' ' .$day;
+echo ' ' . $day;
 echo '<br/>';
 switch ($day) {
     case 1:
@@ -17,5 +17,4 @@ switch ($day) {
     default:
         echo "Неизвестный   день";
 }
-
 ?>
