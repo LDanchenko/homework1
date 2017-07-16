@@ -2,16 +2,13 @@
 $age = rand(1, 100);
 echo 'Ваш возраст: ' . $age;
 echo '<br/>';
-if ($age<=65 and $age>=18) {
+if ($age <= 65 and $age >= 18) {
     echo 'Вам   еще работать   и   работать';
-}
-elseif ($age<=17 and $age>=1) {
+} elseif ($age <= 17 and $age >= 1) {
     echo 'Вам   ещё   рано   работать';
-}
-elseif ($age>65) {
+} elseif ($age > 65) {
     echo 'Вам   пора   на   пенсию';
-}
-else {
+} else {
     echo 'Неизвестный   возраст';
 }
 ?>
