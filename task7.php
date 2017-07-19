@@ -9,11 +9,11 @@ for ($i = 1; $i <= 10; $i++) {
         } elseif (($i % 2 != 0) and ($j % 2 != 0)) {
             echo '[' . ($i * $j) . ']';
         } else {
-            echo '' . ($i * $j);
+            echo ($i * $j);
         }
         echo '</td>';
     }
     echo "</tr>";
 }
-echo "</tr></<table>";
+echo "</<table>";
 ?>
